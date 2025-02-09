@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  line-height: 1.6;
+  padding-top: 20px;
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5);
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+.schedule caption {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.schedule th,
+.schedule td {
+  padding: 15px;
+  text-align: left;
+}
+
+.schedule th {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.schedule tr:nth-child(even) {
+  background-color: #34495e;
+}
+
+.schedule tr:hover {
+  background-color: #f37c1;
+  cursor: pointer;
+}
+
+.speaker-bios {
+  margin: 30px 0;
+}
+
+.speaker-bios h3 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+.speaker-bio {
+  background-color: #34495e;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.speaker-bio h4 {
+  font-size: 1.6rem;
+  color: #f39c12;
+}
+
+.speaker-bio p {
+  font-size: 1rem;
+}
+
+.sponsors {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sponsor-logos img {
+  width: 100px;
+  height: 100px;
+}
+
+.register-now {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 25px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.register-now:hover {
+  background-color: #c0392b;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .schedule caption,
+  .speaker-bios h3 {
+    font-size: 1.5rem;
+  }
+
+  .register-now {
+    width: 80%;
+  }
+
+  .sponsor-logos {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
